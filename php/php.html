@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP - Notatki</title>
+    <link rel="stylesheet" href="php.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="spis">
+        <div class="sesje">Sesje</div>
+        <div class="zapis_do_bd">Zapis do Bazy Danych</div>
+        <div class="wczytywanie_z_bd">Wczytywanie z Bazy Danych</div>
+        <div class="logowanie">Logowanie</div>
+        <div class="php_do_js">PHP do JS</div>
+        <div class="js_do_php">JS do PHP</div>
+        <div class="js_do_php_zmienna">JS do PHP (jedna zmienna)</div>
+        <div class="while_po_wierszach">While - Przechodzenie po wierszach</div>
+        <div class="loading">Loading Podczas Czekania</div>
+    </div>
+    <div class="text">
+        <span class="tytul">Sesje</span>
+        <div class="kopiuj_a">
+            <span class="kopiuj_ikona"><i class="fa-solid fa-copy"></i></span>
+
+            <p> session_start();<br><br> $_SESSION['zalogowany'] = true;<br>$_SESSION['user_login'] = 'krzysiu';</p>
+        </div>
+        <div class="kopiuj_b">
+            <span class="kopiuj_ikona"><i class="fa-solid fa-copy"></i></span>
+            <p>if (isset($_SESSION['zalogowany']) && $_SESSION['zalogowany'] === true) {<br> &emsp;&emsp; echo "Witaj " . $_SESSION['user_login'] . "! Masz dostęp do tajnych danych.";<br>} else {<br>echo "Wypad! Nie jesteś zalogowany.";<br>}</p>
+        </div>
+    </div>
+
+
+    <script src="php.js"></script>
+</body>
+</html>
