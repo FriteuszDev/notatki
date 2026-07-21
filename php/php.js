@@ -30,14 +30,18 @@ elementy.forEach(el => {
         elementy.forEach(item => {
             if (item) {
                 item.style.backgroundColor = ""
+                item.style.color = ""
                 item.style.boxShadow = ""
                 item.style.transform = ""
+                item.style.textShadow = ""
             }
         })
 
         el.style.backgroundColor = "rgb(20, 26, 40)"
+        el.style.color = "aliceblue"
         el.style.boxShadow = "0 0 20px rgb(20, 26, 40)"
         el.style.transform = "scale(1.05)"
+        el.style.textShadow = "0 0 3px aliceblue"
     })
 })
 
